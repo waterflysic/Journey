@@ -28,3 +28,28 @@ var value = number()
 console.log(value);
 
 console.log(number)
+
+//example 4
+
+function getUserRole(name,role)
+{
+    switch (role){
+        case "admin":
+            return '$ (name) is a admin, can get full access'
+            break;
+        case "sub admin":
+            return '$ (name) is a sub admin, can get access to create / delete the test'
+            break;
+        case "testprep":
+            return '$ (name) is a test prep, can get access to create and delete the test'
+            break;
+        case "user":
+            return '$ (name) is a user, can get access to create/ delete the test'
+            break;
+        default:
+            return '$ (name) is a trial user'
+            break;
+    }
+}
+
+console.log(getUserRole("pavi", "admin"));
