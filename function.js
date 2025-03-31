@@ -17,3 +17,14 @@ function myfirstf (name)
 } 
 myfirstf(); // this calls function
 myfirstf(); // this refers function // check for difference between calling function and referring function
+
+//example 3
+
+function number()
+{
+    return "$(name): greetings, how can i help you?${name1}: hanks, He wants"
+}
+var value = number()
+console.log(value);
+
+console.log(number)
